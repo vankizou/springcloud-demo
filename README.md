@@ -2,7 +2,6 @@
 这是一个springCloud基础服务的测试服务
 只是简单的搭建能让其跑起来
 
-本DEMO搭建是基于F版的
 本Demo参照：https://www.fangzhipeng.com/spring-cloud.html
 ```
 
@@ -14,6 +13,30 @@
 | Dalston | 1.5.x | not expected 2.x | - |
 | Edgware | 1.5.x | not expected 2.x | - |
 | Finchley | 2.x | not expected 1.5.x | - |
+
+```
+本DEMO搭建是基于F版的
+
+D版本和E版本的区别
+二者均基于SpringBoot的1.5.x版本。但支持其他组件的版本不同，如以 Dalston.SR4 和 Edgware.RELEASE 来对比：
+
+spring-cloud-config 分别对应 1.3.3和 1.4.0; 
+spring-cloud-netflix 分别对应 1.3.5和 1.4.0; 
+spring-cloud-consul 分别对应 1.2.1和 1.3.0; 
+spring-cloud-gateway 前者不支持，后者 1.0.0。
+
+每个小版本的不同，会有细微差别。
+
+F版本
+F版本是个绝对的大版本，几乎所有组件，全部同步变更版本号为2.x。
+
+小版本
+Spring Cloud 小版本分为:
+
+SNAPSHOT： 快照版本，随时可能修改
+M： MileStone，M1表示第1个里程碑版本，一般同时标注PRE，表示预览版版。
+SR： Service Release，SR1表示第1个正式版本，一般同时标注GA：(GenerallyAvailable),表示稳定版本。
+```
 
 ##### 服务介绍
 
